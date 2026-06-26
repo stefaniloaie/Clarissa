@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pensiunea Clarisia | Munții Rodnei, Anieș</title>
+  <meta name="description" content="Pensiunea Clarisia - cazare în inima Munților Rodnei, sat Anieș. Natură, tradiție și ospitalitate autentică.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Preloader -->
+  <div class="preloader" id="preloader">
+    <div class="preloader-content">
+      <div class="logo">🏔️</div>
+      <p>Pensiunea Clarisia</p>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="#" class="nav-logo">🏔️ Clarisia</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">Despre</a></li>
+        <li><a href="#rooms">Camere</a></li>
+        <li><a href="#gallery">Galerie</a></li>
+        <li><a href="#activities">Activități</a></li>
+        <li><a href="#testimonials">Recenzii</a></li>
+        <li><a href="#location">Locație</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-slider">
+      <div class="hero-slide active">
+        <img src="../pensiunea_clarisia/photo_1.jpg" alt="Pensiunea Clarisia">
+      </div>
+      <div class="hero-slide">
+        <img src="../pensiunea_clarisia/photo_3.jpg" alt="Peisaj montan">
+      </div>
+      <div class="hero-slide">
+        <img src="../pensiunea_clarisia/photo_6.jpg" alt="Natură">
+      </div>
+      <div class="hero-slide">
+        <img src="../pensiunea_clarisia/photo_7.jpg" alt="Pensiune">
+      </div>
+      <div class="hero-slide">
+        <img src="../pensiunea_clarisia/photo_9.jpg" alt="Munții Rodnei">
+      </div>
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>Pensiunea Clarisia</h1>
+      <p class="subtitle">Un refugiu de liniște în inima Munților Rodnei, unde natura și tradiția se întâlnesc</p>
+      <div class="hero-buttons">
+        <a href="#contact" class="btn btn-primary">Rezervă Acum</a>
+        <a href="#about" class="btn btn-outline">Descoperă</a>
+      </div>
+    </div>
+    <div class="hero-dots">
+      <span class="hero-dot active" data-slide="0"></span>
+      <span class="hero-dot" data-slide="1"></span>
+      <span class="hero-dot" data-slide="2"></span>
+      <span class="hero-dot" data-slide="3"></span>
+      <span class="hero-dot" data-slide="4"></span>
+    </div>
+    <div class="scroll-indicator">
+      <span>Scroll</span>
+      <div class="arrow"></div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-images reveal">
+          <img src="../pensiunea_clarisia/photo_2.jpg" alt="Pensiunea Clarisia exterior" class="img-main">
+          <img src="../pensiunea_clarisia/photo_5.jpg" alt="Interior pensiune" class="img-secondary">
+          <div class="experience-badge">
+            <div class="number">10+</div>
+            <div class="text">Ani experiență</div>
+          </div>
+        </div>
+        <div class="about-content reveal">
+          <h2>Bine ați venit la Pensiunea Clarisia</h2>
+          <p>Situată în satul Anieș, la poalele Munților Rodnei, pensiunea noastră vă oferă o experiență autentică de cazare în natură. Cu o tradiție de peste 10 ani în ospitalitate, vă așteptăm cu brațele deschise.</p>
+          <p>Fie că sunteți în căutarea unui refugiu liniștit sau a aventurilor montane, Clarisia este locul perfect pentru o vacanță de neuitat.</p>
+          <div class="about-features">
+            <div class="about-feature">
+              <div class="icon">🏠</div>
+              <div class="text">
+                <h4>Cazare Premium</h4>
+                <p>Camere spațioase și confortabile</p>
+              </div>
+            </div>
+            <div class="about-feature">
+              <div class="icon">🍲</div>
+              <div class="text">
+                <h4>Bucătărie Tradițională</h4>
+                <p>Preparate locale din ingrediente proaspete</p>
+              </div>
+            </div>
+            <div class="about-feature">
+              <div class="icon">🌲</div>
+              <div class="text">
+                <h4>Natură Virgină</h4>
+                <p>Peisaje montane spectaculoase</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rooms Section -->
+  <section class="section rooms" id="rooms">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2>Camerele Noastre</h2>
+        <p>Confort și eleganță în inima naturii</p>
+        <div class="divider"></div>
+      </div>
+      <div class="rooms-grid">
+        <div class="room-card reveal">
+          <div class="room-image">
+            <img src="../pensiunea_clarisia/photo_4.jpg" alt="Camera Dublă Standard">
+            <span class="room-price">180 RON</span>
+          </div>
+          <div class="room-info">
+            <h3>Dublă Standard</h3>
+            <p>Cameră confortabilă cu vedere spre grădină, ideală pentru cupluri sau călători solitari.</p>
+            <div class="room-amenities">
+              <span>WiFi</span>
+              <span>TV</span>
+              <span>Baie proprie</span>
+              <span>Mic dejun</span>
+            </div>
+          </div>
+        </div>
+        <div class="room-card reveal">
+          <div class="room-image">
+            <img src="../pensiunea_clarisia/photo_8.jpg" alt="Camera Matrimonială">
+            <span class="room-price">250 RON</span>
+          </div>
+          <div class="room-info">
+            <h3>Matrimonială</h3>
+            <p>Spațiu elegant cu pat king-size și vedere panoramică spre munți.</p>
+            <div class="room-amenities">
+              <span>WiFi</span>
+              <span>TV</span>
+              <span>Balcon</span>
+              <span>Mic dejun</span>
+              <span>Minibar</span>
+            </div>
+          </div>
+        </div>
+        <div class="room-card reveal">
+          <div class="room-image">
+            <img src="../pensiunea_clarisia/photo_10.jpg" alt="Apartament Familie">
+            <span class="room-price">350 RON</span>
+          </div>
+          <div class="room-info">
+            <h3>Apartament Familie</h3>
+            <p>Apartament spațios cu living separat, perfect pentru familii cu copii.</p>
+            <div class="room-amenities">
+              <span>WiFi</span>
+              <span>TV</span>
+              <span>Bucătărie</span>
+              <span>Balcon</span>
+              <span>2 Băi</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section class="section gallery" id="gallery">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2>Galerie Foto</h2>
+        <p>Descoperă frumusețea locului prin imagini</p>
+        <div class="divider"></div>
+      </div>
+      <div class="gallery-filters reveal">
+        <button class="active" data-filter="all">Toate</button>
+        <button data-filter="exterior">Exterior</button>
+        <button data-filter="interior">Interior</button>
+        <button data-filter="nature">Natură</button>
+        <button data-filter="food">Gastronomie</button>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item large" data-category="exterior" data-index="0">
+          <img src="../pensiunea_clarisia/photo_1.jpg" alt="Exterior pensiune">
+        </div>
+        <div class="gallery-item" data-category="exterior" data-index="1">
+          <img src="../pensiunea_clarisia/photo_2.jpg" alt="Curte pensiune">
+        </div>
+        <div class="gallery-item tall" data-category="nature" data-index="2">
+          <img src="../pensiunea_clarisia/photo_3.jpg" alt="Natură">
+        </div>
+        <div class="gallery-item" data-category="interior" data-index="3">
+          <img src="../pensiunea_clarisia/photo_4.jpg" alt="Interior cameră">
+        </div>
+        <div class="gallery-item" data-category="food" data-index="4">
+          <img src="../pensiunea_clarisia/photo_5.jpg" alt="Bucătărie tradițională">
+        </div>
+        <div class="gallery-item large" data-category="nature" data-index="5">
+          <img src="../pensiunea_clarisia/photo_6.jpg" alt="Peisaj montan">
+        </div>
+        <div class="gallery-item" data-category="exterior" data-index="6">
+          <img src="../pensiunea_clarisia/photo_7.jpg" alt="Exterior">
+        </div>
+        <div class="gallery-item" data-category="interior" data-index="7">
+          <img src="../pensiunea_clarisia/photo_8.jpg" alt="Cameră">
+        </div>
+        <div class="gallery-item tall" data-category="nature" data-index="8">
+          <img src="../pensiunea_clarisia/photo_9.jpg" alt="Munți">
+        </div>
+        <div class="gallery-item" data-category="interior" data-index="9">
+          <img src="../pensiunea_clarisia/photo_10.jpg" alt="Apartament">
+        </div>
+        <div class="gallery-item" data-category="exterior" data-index="10">
+          <img src="../pensiunea_clarisia/photo_11.jpg" alt="Exterior pensiune">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightboxClose">✕</button>
+    <button class="lightbox-prev" id="lightboxPrev">❮</button>
+    <button class="lightbox-next" id="lightboxNext">❯</button>
+    <img src="" alt="Lightbox image" id="lightboxImg">
+  </div>
+
+  <!-- Activities Section -->
+  <section class="section activities" id="activities">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2>Activități</h2>
+        <p>Experiențe de neuitat în natură</p>
+        <div class="divider"></div>
+      </div>
+      <div class="activities-grid">
+        <div class="activity-card reveal">
+          <div class="activity-icon">🥾</div>
+          <h3>Drumeții Montane</h3>
+          <p>Trasee marcate prin Munții Rodnei cu peisaje spectaculoase și aer curat de munte.</p>
+        </div>
+        <div class="activity-card reveal">
+          <div class="activity-icon">🎿</div>
+          <h3>Sporturi de Iarnă</h3>
+          <p>Pârtii de schi și snowboard în apropiere, perfecte pentru sezonul rece.</p>
+        </div>
+        <div class="activity-card reveal">
+          <div class="activity-icon">🚴</div>
+          <h3>Ciclism Montan</h3>
+          <p>Trasee variate pentru mountain bike, de la ușoare la avansate.</p>
+        </div>
+        <div class="activity-card reveal">
+          <div class="activity-icon">🎣</div>
+          <h3>Pescuit</h3>
+          <p>Râuri și lacuri cu pește în abundență, ideale pentru pescuitul sportiv.</p>
+        </div>
+        <div class="activity-card reveal">
+          <div class="activity-icon">📸</div>
+          <h3>Fotografie</h3>
+          <p>Peisaje montane uimitoare, perfecte pentru fotografi pasionați.</p>
+        </div>
+        <div class="activity-card reveal">
+          <div class="activity-icon">🧘</div>
+          <h3>Relaxare</h3>
+          <p>Liniște absolută și aer curat pentru relaxare și reconectare cu natura.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="stats" id="stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-number" data-target="8">0</div>
+          <div class="stat-label">Camere</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" data-target="500" data-suffix="+">0</div>
+          <div class="stat-label">Oaspeți</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" data-target="4.8" data-decimal="true">0</div>
+          <div class="stat-label">Rating</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="section testimonials" id="testimonials">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2>Ce spun oaspeții</h2>
+        <p>Experiențe autentice povestite de cei care ne-au vizitat</p>
+        <div class="divider"></div>
+      </div>
+      <div class="testimonials-wrapper reveal">
+        <div class="testimonials-track" id="testimonialsTrack">
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p class="quote">"Un loc minunat, cu o priveliște spectaculoasă și gazde extraordinar de primitoare. Mâncarea tradițională a fost delicioasă!"</p>
+            <p class="author">Maria Popescu</p>
+            <p class="author-location">București</p>
+          </div>
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p class="quote">"Am petrecut cel mai frumos weekend aici. Liniștea, natura și ospitalitatea ne-au făcut să ne simțim ca acasă."</p>
+            <p class="author">Andrei Ionescu</p>
+            <p class="author-location">Cluj-Napoca</p>
+          </div>
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p class="quote">"Locația perfectă pentru o evadare din oraș. Camerele sunt curate și confortabile, iar peisajul este de vis."</p>
+            <p class="author">Elena Dumitrescu</p>
+            <p class="author-location">Timișoara</p>
+          </div>
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p class="quote">"Revenim cu drag de fiecare dată. Pensiunea Clarisia este locul nostru preferat de vacanță în munți."</p>
+            <p class="author">Familia Moldovan</p>
+            <p class="author-location">Bistrița</p>
+          </div>
+        </div>
+        <div class="testimonial-nav">
+          <button id="testimonialPrev" aria-label="Previous">❮</button>
+          <button id="testimonialNext" aria-label="Next">❯</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Location Section -->
+  <section class="section location" id="location">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2>Locație</h2>
+        <p>Cum ajungi la noi</p>
+        <div class="divider"></div>
+      </div>
+      <div class="location-grid reveal">
+        <div class="location-info">
+          <h3>Unde ne găsești</h3>
+          <div class="address">
+            <span class="icon">📍</span>
+            <div>
+              <strong>Sat Anieș, Comuna Maieru</strong><br>
+              Județul Bistrița-Năsăud, România
+            </div>
+          </div>
+          <div class="location-distances">
+            <div class="distance-item">
+              <span class="icon">🚗</span>
+              <div class="info">
+                <strong>30 min de la Bistrița</strong>
+                <span>Drum național modernizat</span>
+              </div>
+            </div>
+            <div class="distance-item">
+              <span class="icon">🚗</span>
+              <div class="info">
+                <strong>2 ore de la Cluj-Napoca</strong>
+                <span>Via E58 și DN17</span>
+              </div>
+            </div>
+            <div class="distance-item">
+              <span class="icon">🏔️</span>
+              <div class="info">
+                <strong>La poalele Munților Rodnei</strong>
+                <span>Acces direct la trasee montane</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="location-map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10732.77632877645!2d24.65!3d47.45!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4749d3a6b3b8b5f5%3A0x1234567890abcdef!2sAnie%C8%99%2C%20Bistri%C8%9Ba-N%C4%83s%C4%83ud!5e0!3m2!1sro!2sro!4v1700000000000" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2>Contact & Rezervări</h2>
+        <p>Suntem aici pentru tine</p>
+        <div class="divider"></div>
+      </div>
+      <div class="contact-grid reveal">
+        <div class="contact-cards">
+          <div class="contact-card">
+            <div class="icon">📞</div>
+            <div class="info">
+              <h4>Telefon</h4>
+              <a href="tel:+40740123456">+40 740 123 456</a>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="icon">✉️</div>
+            <div class="info">
+              <h4>Email</h4>
+              <a href="mailto:contact@pensiuneaclarisia.ro">contact@pensiuneaclarisia.ro</a>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="icon">📷</div>
+            <div class="info">
+              <h4>Instagram</h4>
+              <a href="https://instagram.com/pensiuneaclarisia" target="_blank">@pensiuneaclarisia</a>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="icon">👍</div>
+            <div class="info">
+              <h4>Facebook</h4>
+              <a href="https://facebook.com/pensiuneaclarisia" target="_blank">Pensiunea Clarisia</a>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form">
+          <h3>Rezervare Online</h3>
+          <form id="reservationForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Nume complet</label>
+                <input type="text" id="name" name="name" required placeholder="Ion Popescu">
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required placeholder="email@exemplu.ro">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="checkin">Check-in</label>
+                <input type="date" id="checkin" name="checkin" required>
+              </div>
+              <div class="form-group">
+                <label for="checkout">Check-out</label>
+                <input type="date" id="checkout" name="checkout" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="guests">Număr oaspeți</label>
+              <select id="guests" name="guests" required>
+                <option value="">Selectează</option>
+                <option value="1">1 persoană</option>
+                <option value="2">2 persoane</option>
+                <option value="3">3 persoane</option>
+                <option value="4">4 persoane</option>
+                <option value="5">5+ persoane</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Mesaj (opțional)</label>
+              <textarea id="message" name="message" placeholder="Cerințe speciale sau întrebări..."></textarea>
+            </div>
+            <button type="submit" class="form-submit">Trimite Rezervarea</button>
+          </form>
+          <div class="form-success" id="formSuccess">
+            <div class="icon">✅</div>
+            <h4>Mulțumim!</h4>
+            <p>Cererea de rezervare a fost trimisă cu succes. Vă vom contacta în curând.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo">🏔️ Pensiunea Clarisia</div>
+          <p>Un colț de rai în Munții Rodnei. Cazare premium, bucătărie tradițională și natură virgină vă așteaptă în satul Anieș.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Navigare</h4>
+          <ul>
+            <li><a href="#about">Despre noi</a></li>
+            <li><a href="#rooms">Camere</a></li>
+            <li><a href="#gallery">Galerie</a></li>
+            <li><a href="#activities">Activități</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-legal">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="#">Termeni și condiții</a></li>
+            <li><a href="#">Politica de confidențialitate</a></li>
+            <li><a href="#">Politica cookies</a></li>
+            <li><a href="#">ANPC</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Pensiunea Clarisia. Toate drepturile rezervate.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
