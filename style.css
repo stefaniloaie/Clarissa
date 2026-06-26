@@ -1349,6 +1349,27 @@ button { border: none; background: none; cursor: pointer; font-family: inherit; 
     border-radius: var(--radius-lg);
     overflow: hidden;
     box-shadow: var(--shadow-md);
+    position: relative;
+}
+
+.maps-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 16px;
+    padding: 12px 24px;
+    background: var(--primary);
+    color: var(--white);
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.maps-link:hover {
+    background: var(--gold);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(200, 134, 10, 0.3);
 }
 
 @media (max-width: 768px) {
