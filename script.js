@@ -202,28 +202,9 @@ document.addEventListener('DOMContentLoaded', () => {
     counters.forEach(counter => counterObserver.observe(counter));
 
     // ========================================
-    // GALLERY FILTERS
+    // GALLERY
     // ========================================
-    const filterBtns = document.querySelectorAll('.gallery-filter');
     const galleryItems = document.querySelectorAll('.gallery-item');
-
-    filterBtns.forEach(btn => {
-        btn.addEventListener('click', () => {
-            filterBtns.forEach(b => b.classList.remove('active'));
-            btn.classList.add('active');
-
-            const filter = btn.dataset.filter;
-
-            galleryItems.forEach((item, i) => {
-                if (filter === 'all' || item.dataset.category === filter) {
-                    item.classList.remove('hidden');
-                    item.style.animationDelay = `${i * 50}ms`;
-                } else {
-                    item.classList.add('hidden');
-                }
-            });
-        });
-    });
 
     // ========================================
     // LIGHTBOX

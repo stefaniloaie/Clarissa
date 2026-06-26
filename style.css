@@ -969,32 +969,6 @@ button { border: none; background: none; cursor: pointer; font-family: inherit; 
    ======================================== */
 .gallery { background: var(--cream); }
 
-.gallery-filters {
-    display: flex;
-    justify-content: center;
-    gap: 8px;
-    margin-bottom: 40px;
-    flex-wrap: wrap;
-}
-
-.gallery-filter {
-    padding: 10px 24px;
-    font-size: 14px;
-    font-weight: 500;
-    border-radius: 30px;
-    border: 1px solid var(--gray-200);
-    color: var(--text-light);
-    transition: var(--transition);
-    background: var(--white);
-}
-
-.gallery-filter:hover,
-.gallery-filter.active {
-    background: var(--primary);
-    color: var(--white);
-    border-color: var(--primary);
-}
-
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
