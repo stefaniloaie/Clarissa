@@ -368,3 +368,47 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 });
+
+// ===== GDPR Cookie Consent =====
+(function() {
+    const banner = document.getElementById('gdprBanner');
+    const acceptBtn = document.getElementById('gdprAccept');
+    const rejectBtn = document.getElementById('gdprReject');
+    const privacyModal = document.getElementById('privacyModal');
+    const privacyClose = document.getElementById('privacyClose');
+    const openPrivacyLinks = [document.getElementById('openPrivacy'), document.getElementById('footerPrivacy')];
+
+    if (!localStorage.getItem('gdpr_consent')) {
+        setTimeout(() => banner.classList.add('show'), 1500);
+    }
+
+    acceptBtn.addEventListener('click', () => {
+        localStorage.setItem('gdpr_consent', 'accepted');
+        banner.classList.remove('show');
+    });
+
+    rejectBtn.addEventListener('click', () => {
+        localStorage.setItem('gdpr_consent', 'rejected');
+        banner.classList.remove('show');
+    });
+
+    openPrivacyLinks.forEach(link => {
+        if (link) link.addEventListener('click', (e) => {
+            e.preventDefault();
+            privacyModal.classList.add('show');
+            document.body.style.overflow = 'hidden';
+        });
+    });
+
+    privacyClose.addEventListener('click', () => {
+        privacyModal.classList.remove('show');
+        document.body.style.overflow = '';
+    });
+
+    privacyModal.addEventListener('click', (e) => {
+        if (e.target === privacyModal) {
+            privacyModal.classList.remove('show');
+            document.body.style.overflow = '';
+        }
+    });
+})();
