@@ -23,36 +23,8 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 4000);
 
     // ========================================
-    // CUSTOM CURSOR
+    // (cursor effects removed)
     // ========================================
-    const cursor = document.getElementById('cursor');
-    const follower = document.getElementById('cursor-follower');
-    let mouseX = 0, mouseY = 0, cursorX = 0, cursorY = 0;
-
-    if (window.innerWidth > 992) {
-        document.addEventListener('mousemove', (e) => {
-            mouseX = e.clientX;
-            mouseY = e.clientY;
-            cursor.style.left = mouseX - 4 + 'px';
-            cursor.style.top = mouseY - 4 + 'px';
-        });
-
-        function animateCursor() {
-            cursorX += (mouseX - cursorX) * 0.12;
-            cursorY += (mouseY - cursorY) * 0.12;
-            follower.style.left = cursorX + 'px';
-            follower.style.top = cursorY + 'px';
-            requestAnimationFrame(animateCursor);
-        }
-        animateCursor();
-
-        // Hover effect on interactive elements
-        const hoverElements = document.querySelectorAll('a, button, .gallery-item, .room-card, .activity-card');
-        hoverElements.forEach(el => {
-            el.addEventListener('mouseenter', () => follower.classList.add('hover'));
-            el.addEventListener('mouseleave', () => follower.classList.remove('hover'));
-        });
-    }
 
     // ========================================
     // HEADER & TOP BAR
@@ -335,20 +307,15 @@ document.addEventListener('DOMContentLoaded', () => {
     // ========================================
     // TILT EFFECT ON ROOM CARDS
     // ========================================
+    // ========================================
+    // ROOM CARDS HOVER LIFT
+    // ========================================
     if (window.innerWidth > 992) {
         const tiltCards = document.querySelectorAll('[data-tilt]');
         tiltCards.forEach(card => {
-            card.addEventListener('mousemove', (e) => {
-                const rect = card.getBoundingClientRect();
-                const x = e.clientX - rect.left;
-                const y = e.clientY - rect.top;
-                const centerX = rect.width / 2;
-                const centerY = rect.height / 2;
-                const rotateX = (y - centerY) / centerY * -4;
-                const rotateY = (x - centerX) / centerX * 4;
-                card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-8px)`;
+            card.addEventListener('mouseenter', () => {
+                card.style.transform = 'translateY(-8px)';
             });
-
             card.addEventListener('mouseleave', () => {
                 card.style.transform = '';
             });
@@ -416,21 +383,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 btn.disabled = false;
                 contactForm.reset();
             }, 3000);
-        });
-    }
-
-    // ========================================
-    // PARALLAX ON HERO (subtle mouse movement)
-    // ========================================
-    const hero = document.getElementById('hero');
-    if (hero && window.innerWidth > 992) {
-        hero.addEventListener('mousemove', (e) => {
-            const x = (e.clientX / window.innerWidth - 0.5) * 10;
-            const y = (e.clientY / window.innerHeight - 0.5) * 10;
-            const activeSlide = hero.querySelector('.hero-slide.active');
-            if (activeSlide) {
-                activeSlide.style.transform = `scale(1.05) translate(${x}px, ${y}px)`;
-            }
         });
     }
 

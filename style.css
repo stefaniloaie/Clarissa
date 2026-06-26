@@ -135,39 +135,7 @@ button { border: none; background: none; cursor: pointer; font-family: inherit; 
 /* ========================================
    CUSTOM CURSOR
    ======================================== */
-.cursor {
-    width: 8px;
-    height: 8px;
-    background: var(--gold);
-    border-radius: 50%;
-    position: fixed;
-    pointer-events: none;
-    z-index: 9999;
-    transition: transform 0.1s;
-    mix-blend-mode: difference;
-}
 
-.cursor-follower {
-    width: 36px;
-    height: 36px;
-    border: 1px solid var(--gold);
-    border-radius: 50%;
-    position: fixed;
-    pointer-events: none;
-    z-index: 9998;
-    transition: transform 0.3s ease-out, width 0.3s, height 0.3s;
-    transform: translate(-50%, -50%);
-}
-
-.cursor-follower.hover {
-    width: 56px;
-    height: 56px;
-    background: rgba(200, 134, 10, 0.1);
-}
-
-@media (max-width: 992px) {
-    .cursor, .cursor-follower { display: none; }
-}
 
 /* ========================================
    GRAIN OVERLAY
@@ -190,15 +158,16 @@ button { border: none; background: none; cursor: pointer; font-family: inherit; 
     font-size: 13px;
     padding: 8px 0;
     transition: transform 0.4s, opacity 0.4s;
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     z-index: 1001;
 }
 
 .top-bar.hidden {
     transform: translateY(-100%);
     opacity: 0;
-    position: absolute;
-    width: 100%;
 }
 
 .top-bar-inner {
@@ -232,7 +201,7 @@ button { border: none; background: none; cursor: pointer; font-family: inherit; 
    ======================================== */
 .header {
     position: fixed;
-    top: 0;
+    top: 36px;
     left: 0;
     right: 0;
     z-index: 1000;
@@ -242,6 +211,7 @@ button { border: none; background: none; cursor: pointer; font-family: inherit; 
 }
 
 .header.scrolled {
+    top: 0;
     background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
