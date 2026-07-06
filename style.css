@@ -1031,6 +1031,28 @@ button { border: none; background: none; cursor: pointer; font-family: inherit; 
 }
 
 /* ========================================
+   VIDEO SECTION
+   ======================================== */
+.video-section {
+    background: var(--white);
+}
+
+.video-wrapper {
+    max-width: 680px;
+    margin: 0 auto;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    background: #000;
+    box-shadow: var(--shadow-xl);
+}
+
+.video-wrapper video {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* ========================================
    LIGHTBOX
    ======================================== */
 .lightbox {
