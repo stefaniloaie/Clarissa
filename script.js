@@ -354,15 +354,46 @@ document.addEventListener('DOMContentLoaded', () => {
             e.preventDefault();
             const btn = contactForm.querySelector('button[type="submit"]');
             const originalHTML = btn.innerHTML;
-            btn.innerHTML = '<span>Trimis cu succes! ✓</span>';
+            const reservationEmail = 'danemilian.strugar@gmail.com';
+            const roomTypeLabels = {
+                matrimoniala: 'Matrimonială - 250 RON',
+                familie: 'Cameră de familie - 300 RON'
+            };
+            const name = contactForm.querySelector('#name').value.trim();
+            const email = contactForm.querySelector('#email').value.trim();
+            const phone = contactForm.querySelector('#phone').value.trim();
+            const roomType = contactForm.querySelector('#roomType').value;
+            const checkin = contactForm.querySelector('#checkin').value;
+            const checkout = contactForm.querySelector('#checkout').value;
+            const message = contactForm.querySelector('#message').value.trim();
+            const roomLabel = roomTypeLabels[roomType] || roomType;
+            const subject = encodeURIComponent(`Cerere rezervare - ${name}`);
+            const body = encodeURIComponent(
+                [
+                    'Bună ziua,',
+                    '',
+                    'Doresc o rezervare la Pensiunea Clarisia:',
+                    `- Nume: ${name}`,
+                    `- Email: ${email}`,
+                    `- Telefon: ${phone}`,
+                    `- Tip cameră: ${roomLabel}`,
+                    `- Check-in: ${checkin}`,
+                    `- Check-out: ${checkout}`,
+                    `- Mesaj: ${message || '-'}`,
+                    '',
+                    'Mulțumesc!'
+                ].join('\n')
+            );
+            const mailtoUrl = `mailto:${reservationEmail}?subject=${subject}&body=${body}`;
+            btn.innerHTML = '<span>Se deschide emailul... ✓</span>';
             btn.style.background = '#1a3a1a';
             btn.disabled = true;
+            window.location.href = mailtoUrl;
 
             setTimeout(() => {
                 btn.innerHTML = originalHTML;
                 btn.style.background = '';
                 btn.disabled = false;
-                contactForm.reset();
             }, 3000);
         });
     }
