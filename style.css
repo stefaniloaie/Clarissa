@@ -1352,6 +1352,54 @@ button { border: none; background: none; cursor: pointer; font-family: inherit; 
     color: var(--text-light);
 }
 
+@media (max-width: 768px) {
+    .testimonial-card {
+        min-width: 280px;
+        max-width: 320px;
+        padding: 28px;
+    }
+     
+    .testimonial-card p {
+        font-size: 14px;
+    }
+     
+    .testimonial-stars {
+        font-size: 16px;
+    }
+     
+    .testimonial-track {
+        animation: scrollTestimonials 25s linear infinite;
+    }
+}
+
+@media (max-width: 480px) {
+    .testimonials-carousel {
+        margin: 0 -16px;
+        padding: 0 16px;
+    }
+     
+    .testimonial-card {
+        min-width: 100%;
+        max-width: 100%;
+        padding: 24px;
+    }
+     
+    .testimonial-track {
+        animation: none;
+        transform: translateX(0) !important;
+        flex-direction: column;
+        gap: 16px;
+    }
+     
+    .testimonial-card:hover {
+        transform: none;
+    }
+     
+    .testimonial-card p {
+        font-size: 13px;
+    }
+}
+
 /* ========================================
    LOCATION
    ======================================== */
